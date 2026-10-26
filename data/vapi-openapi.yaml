@@ -1,0 +1,488 @@
+openapi: 3.0.0
+info:
+  title: vAPI
+  version: 1.0.0
+  description: vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable
+    API Interface that mimics OWASP API Top 10 scenarios in the means of Exercises.
+servers:
+- url: http://localhost
+paths:
+  /vapi/api1/user:
+    post:
+      summary: Create User
+      operationId: Create_User
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      security:
+      - bearerAuth: []
+  /vapi/api1/user/{api1_id}:
+    get:
+      summary: Get User
+      operationId: Get_User
+      parameters:
+      - name: api1_id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID of the user
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+    put:
+      summary: Update User
+      operationId: Update_User
+      parameters:
+      - name: api1_id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID of the user
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      security:
+      - bearerAuth: []
+  /vapi/api2/user/login:
+    post:
+      summary: User Login
+      operationId: User_Login
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api2/user/details:
+    get:
+      summary: Get Details
+      operationId: Get_Details
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api3/user:
+    post:
+      summary: Create User
+      operationId: Create_User_Api3
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api4/login:
+    post:
+      summary: Mobile Login
+      operationId: Mobile_Login
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api4/otp/verify:
+    post:
+      summary: Verify OTP
+      operationId: Verify_OTP
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api4/user:
+    get:
+      summary: Get Details
+      operationId: Get_Details_2
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api5/user:
+    post:
+      summary: Create User
+      operationId: Create_User_2
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api5/user/{api5_id}:
+    get:
+      summary: Get User
+      operationId: Get_User_2
+      parameters:
+      - name: api5_id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: ID of {api5_id
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api6/user:
+    post:
+      summary: Create User
+      operationId: Create_User_3
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api6/user/me:
+    get:
+      summary: Get User
+      operationId: Get_User_3
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api7/user:
+    post:
+      summary: Create User
+      operationId: Create_User_4
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api7/user/login:
+    get:
+      summary: User Login
+      operationId: User_Login_2
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api7/user/key:
+    get:
+      summary: Get Key
+      operationId: Get_Key
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api7/user/logout:
+    get:
+      summary: User Logout
+      operationId: User_Logout
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api8/user/login:
+    post:
+      summary: User Login
+      operationId: User_Login_3
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api8/user/secret:
+    get:
+      summary: Get Secret
+      operationId: Get_Secret
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/api9/v2/user/login:
+    post:
+      summary: Login
+      operationId: Login
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+  /vapi/api10/user/flag:
+    get:
+      summary: Get Flag
+      operationId: Get_Flag
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/jwt/user:
+    post:
+      summary: Create User
+      operationId: Create_User_5
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+    get:
+      summary: Get User
+      operationId: Get_User_4
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/serversurfer:
+    get:
+      summary: Get Data
+      operationId: Get_Data
+      parameters:
+      - name: url
+        in: query
+        required: false
+        schema:
+          type: string
+        description: ''
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+  /vapi/stickynotes:
+    post:
+      summary: Store a Note
+      operationId: Store_a_Note
+      parameters: []
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+    get:
+      summary: Get Notes
+      operationId: Get_Notes
+      parameters:
+      - name: format
+        in: query
+        required: false
+        schema:
+          type: string
+        description: ''
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

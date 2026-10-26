@@ -1,0 +1,2 @@
+method,path,score,level,technique,param
+PUT,/vapi/api1/user/{api1_id},0.63,Trung bình,Dò quét có tri thức tiên nghiệm,api1_id

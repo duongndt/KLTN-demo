@@ -1,0 +1,3 @@
+method,path
+GET,/vapi/api1/user/{api1_id}
+PUT,/vapi/api1/user/{api1_id}

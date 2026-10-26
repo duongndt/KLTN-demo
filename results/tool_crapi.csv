@@ -1,0 +1,16 @@
+method,path,score,level,technique,param
+GET,/identity/api/v2/user/videos/{video_id},0.92,Cao,Dò quét không tri thức tiên nghiệm,video_id
+PUT,/identity/api/v2/user/videos/{video_id},0.92,Cao,Dò quét không tri thức tiên nghiệm,video_id
+DELETE,/identity/api/v2/user/videos/{video_id},0.92,Cao,Dò quét không tri thức tiên nghiệm,video_id
+DELETE,/identity/api/v2/admin/videos/{video_id},0.83,Cao,Dò quét không tri thức tiên nghiệm,video_id
+GET,/workshop/api/shop/orders/{order_id},0.83,Cao,Dò quét không tri thức tiên nghiệm,order_id
+PUT,/workshop/api/shop/orders/{order_id},0.83,Cao,Dò quét không tri thức tiên nghiệm,order_id
+POST,/workshop/api/shop/orders/return_order,0.83,Cao,Dò quét không tri thức tiên nghiệm,order_id
+GET,/identity/api/v2/user/videos/convert_video,0.75,Cao,Dò quét không tri thức tiên nghiệm,video_id
+GET,/workshop/api/mechanic/mechanic_report,0.75,Cao,Dò quét không tri thức tiên nghiệm,report_id
+POST,/workshop/api/shop/orders,0.73,Cao,Dò quét không tri thức tiên nghiệm,product_id
+POST,/identity/api/v2/user/reset-password,0.63,Trung bình,Dò quét có tri thức tiên nghiệm,email
+POST,/community/api/v2/community/posts/{postId}/comment,0.63,Trung bình,Dò quét có tri thức tiên nghiệm,postId
+GET,/community/api/v2/community/posts/{postId},0.55,Trung bình,Dò quét có tri thức tiên nghiệm,postId
+POST,/workshop/api/shop/products,0.53,Trung bình,Dò quét có tri thức tiên nghiệm,name
+GET,/identity/api/v2/vehicle/{vehicleId}/location,0.4,Trung bình,Dò quét có tri thức tiên nghiệm,vehicleId

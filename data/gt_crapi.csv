@@ -1,0 +1,3 @@
+method,path
+GET,/identity/api/v2/vehicle/{vehicleId}/location
+GET,/workshop/api/mechanic/mechanic_report

@@ -1,0 +1,10 @@
+method,path
+GET,/identity/api/v2/user/videos/{video_id}
+PUT,/identity/api/v2/user/videos/{video_id}
+DELETE,/identity/api/v2/user/videos/{video_id}
+GET,/identity/api/v2/user/videos/convert_video
+DELETE,/identity/api/v2/admin/videos/{video_id}
+PUT,/workshop/api/shop/orders/{order_id}
+GET,/workshop/api/shop/orders/{order_id}
+POST,/workshop/api/shop/orders/return_order
+GET,/workshop/api/mechanic/mechanic_report

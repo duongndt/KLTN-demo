@@ -1,0 +1,4 @@
+method,path,score,level,technique,param
+GET,/orders/{orderId},0.75,Cao,Dò quét không tri thức tiên nghiệm,orderId
+POST,/batch/orders,0.53,Trung bình,Chèn thêm vào danh sách,orderId
+GET,/vehicles/{vehicleId}/location,0.4,Trung bình,Dò quét có tri thức tiên nghiệm,vehicleId
